@@ -37,9 +37,21 @@
   }
   
   .modal-content button {
-    margin: 10px;
+    margin: 10px auto;
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
+    width: 20%;
+    min-width: 120px;
   }
   
+  #button-close{
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 40%;
+    border: none;
+    max-width: fit-content;
+    min-width: 25px;
+    text-align: center;
+    display: inline-block;
+  }

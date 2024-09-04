@@ -5,14 +5,14 @@ const alunosMockData = [
   { id: 1, nome: "João Silva", atribuido: "Evento A" },
   { id: 2, nome: "Maria Oliveira", atribuido: "Evento B" },
   { id: 3, nome: "Carlos Pereira", atribuido: "Nenhum" },
-  { id: 3, nome: "Carlos Pereira", atribuido: "Nenhum" },
-  { id: 3, nome: "Carlos Pereira", atribuido: "Nenhum" },
-  { id: 3, nome: "Carlos Pereira", atribuido: "Nenhum" },
-  { id: 3, nome: "Carlos Pereira", atribuido: "Nenhum" },
-  { id: 3, nome: "Carlos Pereira", atribuido: "Nenhum" },
-  { id: 3, nome: "Carlos Pereira", atribuido: "Nenhum" },
-  { id: 3, nome: "Carlos Pereira", atribuido: "Nenhum" },
-  { id: 3, nome: "Carlos Pereira", atribuido: "Nenhum" },
+  { id: 4, nome: "Carlos Pereira", atribuido: "Nenhum" },
+  { id: 5, nome: "Carlos Pereira", atribuido: "Nenhum" },
+  { id: 6, nome: "Carlos Pereira", atribuido: "Nenhum" },
+  { id: 7, nome: "Carlos Pereira", atribuido: "Nenhum" },
+  { id: 8, nome: "Carlos Pereira", atribuido: "Nenhum" },
+  { id: 9, nome: "Carlos Pereira", atribuido: "Nenhum" },
+  { id: 10, nome: "Carlos Pereira", atribuido: "Nenhum" },
+  { id: 11, nome: "Carlos Pereira", atribuido: "Nenhum" },
   // Adicione mais alunos conforme necessário
 ];
 
