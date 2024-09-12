@@ -14,6 +14,7 @@ function ProgramarMundoSENAI({ saveEvento, closeModal, eventoInicial }) {
 
   const handleSave = () => {
     const evento = { rangeData, observacoes, alunos: selectedAlunos };
+    console.log(evento)
     saveEvento(evento);
     closeModal();
   };

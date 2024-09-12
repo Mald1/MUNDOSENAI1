@@ -28,18 +28,20 @@ function Alunos() {
 
       {showModal && (
         <div className="modal">
-          {!formMode ? (
-            <div className="modal-content">
-              <div className="div-close">
-              <button id="button-close" onClick={() => closeModal()}>X</button>
+          <div className="modal-size">
+            {!formMode ? (
+              <div className="modal-content">
+                <div className="div-close">
+                <button id="button-close" onClick={() => closeModal()}>X</button>
+                </div>
+                <h2>O que você quer fazer?</h2>
+                <button onClick={() => handleFormMode("adicionar")}>Adicionar</button>
+                <button onClick={() => handleFormMode("editar")}>Editar</button>
               </div>
-              <h2>O que você quer fazer?</h2>
-              <button onClick={() => handleFormMode("adicionar")}>Adicionar</button>
-              <button onClick={() => handleFormMode("editar")}>Editar</button>
-            </div>
-          ) : (
-            <AdicionarAluno mode={formMode} closeModal={closeModal} />
-          )}
+            ) : (
+              <AdicionarAluno mode={formMode} closeModal={closeModal} />
+            )}
+          </div>
         </div>
       )}
     </div>

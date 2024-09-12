@@ -3,15 +3,16 @@ import './AdicionarAluno.css';
 
 function AdicionarAluno({ mode, closeModal }) {
   const [nome, setNome] = useState("");
+  const [lastNome, setLastNome] = useState("");
   const [matricula, setMatricula] = useState("");
   const [curso, setCurso] = useState("");
 
-  const cursosDisponiveis = ["Engenharia", "Informática", "Mecânica", "Administração"];
+  const cursosDisponiveis = ["PLACEHOLDER"]; //cursos_id
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Lógica para adicionar ou editar o aluno
-    console.log("Aluno Adicionado:", { nome, matricula, curso });
+    console.log("Aluno Adicionado:", { nome, lastNome, matricula, curso });
     closeModal();
   };
 
@@ -20,11 +21,20 @@ function AdicionarAluno({ mode, closeModal }) {
       <h2>{mode === "adicionar" ? "Adicionar Aluno" : "Editar Aluno"}</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Nome do Aluno:</label>
+          <label>Primeiro Nome:</label>
           <input
             type="text"
             value={nome}
             onChange={(e) => setNome(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label>Sobrenome:</label>
+          <input
+            type="text"
+            value={lastNome}
+            onChange={(e) => setLastNome(e.target.value)}
             required
           />
         </div>

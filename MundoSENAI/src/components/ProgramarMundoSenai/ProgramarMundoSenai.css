@@ -67,3 +67,12 @@
     background-color: #aaa;
   }
   
+  .evento-card{
+    padding: 1.5em;
+  }
+
+  .evento-card button{
+    padding: 1em;
+    font-size: 1em;
+    border-radius: 20px;
+  }
